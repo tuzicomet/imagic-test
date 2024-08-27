@@ -38,16 +38,15 @@
 .custom-arrow {
     position: absolute;
     top: 50%;
-    width: 2.3em;
-    height: 2.3em;
+    width: 3em;
+    height: 3em;
     /* Background is needed for images with white background */
     background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 1.2em;
+    border-radius: 2em;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
     z-index: 10;
 }
 
@@ -60,7 +59,7 @@
 }
 
 .swiper-container {
-    position: relative;
+    margin-bottom: 2em;
 }
 
 .swiper-container .swiper-pagination {

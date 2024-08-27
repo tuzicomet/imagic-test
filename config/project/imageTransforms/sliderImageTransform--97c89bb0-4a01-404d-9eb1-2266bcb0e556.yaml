@@ -1,11 +1,11 @@
 fill: null
 format: null
-handle: sliderimagetransform
-height: null
+handle: sliderImageTransform
+height: 10
 interlace: none
 mode: fit
 name: sliderImageTransform
 position: center-center
 quality: null
-upscale: true
-width: 1080
+upscale: false
+width: 10

@@ -2,10 +2,10 @@
 
 {# Load the images attached to the entry into variables we can use: #}
 {% set heroImage = entry.heroImage.one() %}
-{% set sliderImages = entry.heroImage.one() %}
 
 {% block content %}
     <!-- Landing Section -->
+    {# Use the hero image as the background #}
     <div class="landing-section" style="background-image: url('{{ heroImage.getUrl() }}');">
         <h1 class="landing-title">
             {{ entry.title }}
@@ -17,14 +17,14 @@
         <div class="swiper-wrapper">
             {% for image in entry.sliderImages %}
                 <div class="swiper-slide">
-                    <img src="{{ image.url }}" alt="Slider Image" class="w-full h-auto">
+                    {# Get the slider image, but with the correct image transform applied #}
+                    {{image.getImg('sliderImageTransform')}}
                 </div>
             {% endfor %}
         </div>
-        <!-- Custom Navigation Arrows -->
+        <!-- Swiper navigation -->
         <div class="swiper-button-prev custom-arrow"></div>
         <div class="swiper-button-next custom-arrow"></div>
-        <!-- Pagination -->
         <div class="swiper-pagination"></div>
     </div>
 
