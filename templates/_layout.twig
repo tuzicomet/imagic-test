@@ -1,0 +1,36 @@
+{# _layout.twig #}
+{# Serves as a base layout that can be used by other templates (their stuff goes in content) 
+by extending this template. They can use this, but override the blocks #}
+{# NOTE: the name starting with an underscore _ means the template is private (cant visit
+with e.g. /_layout like you could with a non private template.) #}
+<!DOCTYPE html>
+<html lang="{{ craft.app.language }}">
+  <head>
+    <meta charset="utf-8"/>
+    <title>{{ siteName }}</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    {# This line generates a link to our styles.css file in /web. It is equivalent to:
+    <link href="{{ url('@web/styles.css') }}" rel="stylesheet">  #}
+    {% do craft.app.view.registerCssFile('@web/styles.css') %}
+    {% do craft.app.view.registerCssFile('@web/tailwind.css') %}
+  </head>
+  <body>
+    <header>
+        <a class="home" href="{{ siteUrl }}">{{ siteName }}</a>
+    </header>
+
+    <main>
+        {# This defines a block named content #}
+        {# Blocks are sections of code that can be overridden or replaced by templates 
+        that extend this one #}
+        {% block content %}
+            {# Nothing here, yet! #}
+        {% endblock %}
+    </main>
+
+    <footer>
+    </footer>
+
+  </body>
+</html>

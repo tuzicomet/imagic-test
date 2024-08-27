@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: landingPage
+name: 'Landing Page'
+propagationMethod: all
+siteSettings:
+  d5f07c1d-9d1a-4735-a040-5a0ad834b495: # Imagic Test
+    enabledByDefault: true
+    hasUrls: true
+    template: index.twig
+    uriFormat: __home__
+type: single

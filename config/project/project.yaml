@@ -1,13 +1,26 @@
-dateModified: 1724722269
+dateModified: 1724726863
 email:
   fromEmail: leo336570@gmail.com
   fromName: 'Imagic Test'
   transportType: craft\mail\transportadapters\Sendmail
+fs:
+  hardDisk:
+    hasUrls: true
+    name: 'Hard Disk'
+    settings:
+      path: '@webroot/uploads/images'
+    type: craft\fs\Local
+    url: '@web/uploads/images'
 meta:
   __names__:
+    70c18853-dff4-4cd2-b6c6-f15229f724d4: 'Landing Page' # Landing Page
     72afebc2-75ef-438d-8ce7-52d119a51c2e: 'Imagic Test' # Imagic Test
+    797e2ef7-228f-467f-b8ca-7d2cb80caab2: Images # Images
     99193ed8-2754-4f53-bb64-1f7fdbde7ae3: Common # Common
+    b9380879-706c-4285-8ef9-7ed1563f838c: 'Slider Images' # Slider Images
     d5f07c1d-9d1a-4735-a040-5a0ad834b495: 'Imagic Test' # Imagic Test
+    de98037e-c095-4ccc-9b6c-446758bfbbe6: 'Hero Image' # Hero Image
+    ff053adc-3a59-4ded-9464-2b820acd531e: 'Landing Page' # Landing Page
 system:
   edition: solo
   live: true

@@ -1,0 +1,71 @@
+fieldLayouts:
+  622966fc-0f5c-4e39-9c86-4b920b93aa15:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: df283aac-f7b8-45cc-8bd2-b9dc2550befd
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: de98037e-c095-4ccc-9b6c-446758bfbbe6 # Hero Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 09786e71-00e5-4300-87c6-72b5c13ea09f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b9380879-706c-4285-8ef9-7ed1563f838c # Slider Images
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 02527ef3-1994-42ba-aed0-90e183c65bd2
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: ea530f1f-f96d-4a4f-8d2c-defa55092fa6
+        userCondition: null
+handle: landingPage
+hasTitleField: true
+name: 'Landing Page'
+section: ff053adc-3a59-4ded-9464-2b820acd531e # Landing Page
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
