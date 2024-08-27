@@ -14,10 +14,13 @@ with e.g. /_layout like you could with a non private template.) #}
     <link href="{{ url('@web/styles.css') }}" rel="stylesheet">  #}
     {% do craft.app.view.registerCssFile('@web/styles.css') %}
     {% do craft.app.view.registerCssFile('@web/tailwind.css') %}
+
+    {# Stylesheet for Swiper, used for the image slider #}
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   </head>
   <body>
     <header>
-        <a class="home" href="{{ siteUrl }}">{{ siteName }}</a>
+        {# <a class="home" href="{{ siteUrl }}">{{ siteName }}</a> #}
     </header>
 
     <main>

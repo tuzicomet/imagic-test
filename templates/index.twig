@@ -1,17 +1,19 @@
 {% extends '_layout' %}
 
-
+{# Load the images attached to the entry into variables we can use: #}
+{% set heroImage = entry.heroImage.one() %}
+{% set sliderImages = entry.heroImage.one() %}
 
 {% block content %}
-    <!-- Hero Section -->
-    <div class="relative h-screen bg-cover bg-center" style="background-image: url('{{ entry.heroImage.first().url }}');">
-        <h1 class="absolute inset-0 flex items-center justify-center text-white text-4xl lg:text-6xl font-bold">
+    <!-- Landing Section -->
+    <div class="landing-section" style="background-image: url('{{ heroImage.getUrl() }}');">
+        <h1 class="landing-title">
             {{ entry.title }}
         </h1>
     </div>
 
-    <!-- Slider Section -->
-    <div class="swiper-container max-w-3xl mx-auto mt-8">
+    <!-- Swiper Slider Section -->
+    <div class="swiper-container max-w-3xl mx-auto mt-12 relative">
         <div class="swiper-wrapper">
             {% for image in entry.sliderImages %}
                 <div class="swiper-slide">
@@ -19,29 +21,14 @@
                 </div>
             {% endfor %}
         </div>
+        <!-- Custom Navigation Arrows -->
+        <div class="swiper-button-prev custom-arrow"></div>
+        <div class="swiper-button-next custom-arrow"></div>
         <!-- Pagination -->
         <div class="swiper-pagination"></div>
-        <!-- Navigation -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
     </div>
 
-    <!-- Swiper JS and Tailwind CSS -->
+    <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var swiper = new Swiper('.swiper-container', {
-                direction: 'horizontal',
-                loop: true,
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                },
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
-            });
-        });
-    </script>
+    <script src="imageSwiper.js"></script>
 {% endblock %}

@@ -1,4 +1,4 @@
-dateModified: 1724726863
+dateModified: 1724729189
 email:
   fromEmail: leo336570@gmail.com
   fromName: 'Imagic Test'
@@ -15,6 +15,7 @@ meta:
   __names__:
     70c18853-dff4-4cd2-b6c6-f15229f724d4: 'Landing Page' # Landing Page
     72afebc2-75ef-438d-8ce7-52d119a51c2e: 'Imagic Test' # Imagic Test
+    97c89bb0-4a01-404d-9eb1-2266bcb0e556: sliderImageTransform # sliderImageTransform
     797e2ef7-228f-467f-b8ca-7d2cb80caab2: Images # Images
     99193ed8-2754-4f53-bb64-1f7fdbde7ae3: Common # Common
     b9380879-706c-4285-8ef9-7ed1563f838c: 'Slider Images' # Slider Images

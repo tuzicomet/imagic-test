@@ -1,3 +1,83 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Full-screen hero section */
+.landing-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; /* Ensure no repeat of the image */
+}
+
+/* Title styling */
+.landing-title {
+    color: white;
+    font-size: 2.5rem; /* Responsive font size */
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Swiper Container */
+.swiper-container {
+    width: 100%;
+    height: 500px; /* Adjust height as needed */
+    overflow: hidden;
+    position: relative; /* Make sure the arrows are positioned relative to this container */
+}
+
+/* Swiper Slides */
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+}
+
+/* Custom Navigation Arrows */
+.custom-arrow {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.swiper-button-prev.custom-arrow {
+    left: 10px; /* Position left arrow */
+}
+
+.swiper-button-next.custom-arrow {
+    right: 10px; /* Position right arrow */
+}
+
+.swiper-container {
+    position: relative;
+}
+
+.swiper-container .swiper-pagination {
+    position: absolute;
+    /* \!important tag needed to override default swiper styling */
+    
+    bottom: 10px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+}
+
+.swiper-container .swiper-pagination-bullet {
+    background-color: blue !important;
+}
+
+/* Responsive adjustments */
+@media (min-width: 1024px) {
+    .landing-title {
+        font-size: 4rem;
+    }
+}
