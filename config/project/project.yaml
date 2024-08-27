@@ -1,0 +1,22 @@
+dateModified: 1724722269
+email:
+  fromEmail: leo336570@gmail.com
+  fromName: 'Imagic Test'
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    72afebc2-75ef-438d-8ce7-52d119a51c2e: 'Imagic Test' # Imagic Test
+    99193ed8-2754-4f53-bb64-1f7fdbde7ae3: Common # Common
+    d5f07c1d-9d1a-4735-a040-5a0ad834b495: 'Imagic Test' # Imagic Test
+system:
+  edition: solo
+  live: true
+  name: 'Imagic Test'
+  schemaVersion: 4.5.3.0
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true
