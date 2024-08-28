@@ -24,8 +24,9 @@
 /* Swiper Container */
 .swiper-container {
     width: 100%;
+    max-width: 1080px;
     overflow: hidden;
-    position: relative; /* Make sure the arrows are positioned relative to this container */
+    position: relative;
 }
 
 /* Swiper Slides */

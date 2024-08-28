@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     var swiper = new Swiper('.swiper-container', {
-        direction: 'horizontal',
+        autoHeight: true, // makes slider height responsive to landscape / portrait images
         loop: true,
         pagination: {
             el: '.swiper-pagination',
