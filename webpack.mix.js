@@ -1,3 +1,11 @@
-const mix = require('laravel-mix');
+let mix = require('laravel-mix');
+let tailwindcss = require('tailwindcss');
 
-mix.js('web/swiper.js', 'public/js');
+mix.setPublicPath('web')
+    .js('web/imageSwiper.js', 'web/js')
+    .postCss('web/styles.css', 'web/css', [
+        tailwindcss('./tailwind.config.js')
+    ])
+    .version()
+    .sourceMaps();
+

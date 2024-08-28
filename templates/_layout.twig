@@ -12,11 +12,9 @@ with e.g. /_layout like you could with a non private template.) #}
 
     {# This line generates a link to our styles.css file in /web. It is equivalent to:
     <link href="{{ url('@web/styles.css') }}" rel="stylesheet">  #}
-    {% do craft.app.view.registerCssFile('@web/styles.css') %}
-    {% do craft.app.view.registerCssFile('@web/tailwind.css') %}
+    {% do craft.app.view.registerCssFile('@web/css/styles.css') %}
+    {% do craft.app.view.registerCssFile('@web/css/tailwind.css') %}
 
-    {# Stylesheet for Swiper, used for the image slider #}
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   </head>
   <body>
     <header>
