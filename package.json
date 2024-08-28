@@ -7,9 +7,7 @@
     "dev": "npm run development",
     "development": "mix",
     "watch": "mix watch",
-    "production": "mix --production",
-    "build:css": "mix --css",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "production": "mix --production"
   },
   "repository": {
     "type": "git",
